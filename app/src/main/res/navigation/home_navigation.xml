@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/inicioFragment">
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.besushopproject.CarritoFragment"
+        android:label="CarritoFragment"
+        tools:layout="@layout/fragment_carrito"
+        >
+        <action
+            android:id="@+id/action_CarritoFragment_to_PerfilFragment"
+            app:destination="@id/perfilFragment" />
+        <argument
+            android:name="producto"
+            app:argType="com.example.besushopproject.Product"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="Name"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.besushopproject.ListFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_list"
+        >
+        <action
+            android:id="@+id/action_InicioFragment_to_CarritoFragment2"
+            app:destination="@id/carritoFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.besushopproject.PerfilFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_perfil"
+        />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.besushopproject.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        >
+        <action
+            android:id="@+id/action_detailFragment_to_carritoFragment"
+            app:destination="@id/carritoFragment" />
+        <argument
+            android:name="product"
+            app:argType="com.example.besushopproject.Product" />
+    </fragment>
+</navigation>

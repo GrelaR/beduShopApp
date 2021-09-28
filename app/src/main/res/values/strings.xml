@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">beduShop</string>
+    <string name="title">Bedu shop</string>
+    <string name="add_email">Correo electrónico</string>
+    <string name="add_password">Contrasenia</string>
+    <string name="iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="register">Regístrate aquí</string>
+    <string name="toast_message">Inicio de sesión fallido</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="telefono">teléfono</string>
+    <string name="logo_de_bedu">Logo de Bedu</string>
+    <string name="producto">Producto</string>
+    <string name="_1_000">$1,000</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="Disponible_en_tu_domiclio">Disponible en tu domicilio</string>
+    <string name="Entrega_mañana">Entrega mañana</string>
+    <string name="cantidadDeCuotasSinIntereses">En 6 cuotas sin intereses</string>
+    <string name="Agregar_al_carrito">Agregar al carrito</string>
+    <string name="Descripcion">Descripción</string>
+    <string name="imagen_del_producto">Imagen_del_producto</string>
+    <string name="nombre_completo">Nombre Completo</string>
+
+</resources>

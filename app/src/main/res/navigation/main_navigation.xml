@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/start_dest">
+    <fragment
+        android:id="@+id/start_dest"
+        android:name="com.example.besushopproject.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_home_dest_to_register_fragment"
+            app:destination="@id/register_fragment" />
+        <action
+            android:id="@+id/action_start_dest_to_HomeActivity"
+            app:destination="@id/HomeActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.example.besushopproject.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_register_fragment_to_home_dest"
+            app:destination="@id/start_dest"/>
+    </fragment>
+
+    <activity
+        android:id="@+id/HomeActivity"
+        android:name="com.example.besushopproject.HomeActivity"
+        tools:layout="@layout/activity_home">
+    </activity>
+
+
+</navigation>

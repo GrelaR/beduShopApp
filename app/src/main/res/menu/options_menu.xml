@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+android:title="searchItem"
+    android:id="@+id/searchItem"
+    android:icon="@drawable/ic_baseline_search_24"
+    android:iconTint="@color/white"
+    app:showAsAction="ifRoom"
+/>
+    <item
+        android:title="redirectItem"
+        android:id="@+id/redirectItem"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        />
+</menu>
